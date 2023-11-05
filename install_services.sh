@@ -28,6 +28,8 @@ function fn_int_server {
 }
 
 function fn_ext_server {
+    apt update -y
+    apt install -y vnstat
     bash <(curl -Ls https://raw.githubusercontent.com/mehrdad-drpc/x-ui/main/install.sh)
 }
 
