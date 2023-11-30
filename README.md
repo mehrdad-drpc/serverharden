@@ -53,7 +53,7 @@ $ ssh <your_server_ip_address> -p 8452 -l <new_user>
 
 install necessary services in `internal` and `external` servers
 
-### Run the following file [_install_services.sh_](install_services.sh) and enter the inputs
+### Run the following file [install_services.sh](install_services.sh) and enter the inputs
 
 ```bash
 sudo bash install_services.sh
