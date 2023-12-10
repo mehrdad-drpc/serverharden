@@ -37,7 +37,7 @@ function fn_custom_ssh_banner {
 }
 
 function fn_ufw {
-    printf "${PURPLE}install & configure ufw ${NC} \n"
+    printf "${PURPLE}installing... & configure ufw ${NC} \n"
     apt install -y ufw > /dev/null 2>&1
     sed --in-place s/IPV6=yes/IPV6=no/ /etc/default/ufw
     ssh_pn=`cat /etc/ssh/sshd_config | grep "Port " | cut --delimiter=" " -f2`
