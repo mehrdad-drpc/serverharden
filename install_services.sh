@@ -24,7 +24,7 @@ function fn_int_server {
     vim-addons install haproxy
     cp --force ${PWD}/haproxy.cfg /etc/haproxy/haproxy.cfg
     printf "${GREEN}haproxy config file has been copied${NC}\n"
-    printf "${PURPLE}now you can enter your custom config into the '/etc/haproxy/haproxy.cfg' file${NC}\n"
+    printf "${PURPLE}now you can edit your custom config: 'vim /etc/haproxy/haproxy.cfg'${NC}\n"
 }
 
 function fn_ext_server {
